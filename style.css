@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Bicho';
+    src: url('fontes/DearthDanceDemoRegular.ttf') format('opentype');
+    font-weight: normal;
+}
+
+
+:root {
+    --cor0: #000000;
+    --cor1: rgba(255, 68, 0, 0.945);
+    --cor2: #080808;
+    
+ 
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bicho';
+ }
+
+ * {
+    margin: 0px;
+    padding: 0px;
+ }
+
+ body {
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
+ }
+
+ header {
+    background-image: linear-gradient(to top, orangered, white);
+    background-color: var(--cor2);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+ }
+
+ header > h1 {
+    color: black;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.308);
+ }
+
+ header > p {
+    font-family: var(--fonte-destaque);
+    font-size: 1,5em;
+    color: whitesmoke;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    margin: auto;
+    text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.342);
+ }
+
+ nav {
+    background-color: rgba(0, 0, 0, 0.774);
+    padding: 6px;
+    box-shadow: 3px 7px 9px rgba(0, 0, 0, 0.363);
+    text-align: center;
+    min-width: 300px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom:30px;
+    border-radius: 5px;
+  
+
+ }
+ 
+ nav > a {
+    background-image: linear-gradient(to top, orangered, white);
+    color: black;
+    padding: 3px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .7s;
+    
+ }
+ 
+ nav > a:hover {
+    background-color: purple;
+    color: red;
+ }
+
+
+ main {
+    border-radius: 3px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.404);
+
+
+ }
+
+main h1 {
+    background-color: rgba(255, 68, 0, 0.342);
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.404);
+
+}
+
+main h2 {
+    background-color: rgba(255, 68, 0, 0.342);
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.404);
+
+}
+
+
+ main p {
+
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 0.9em;
+    line-height: 2em;
+    
+    }
+
+ main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    padding: 2px 6px;
+ }
+
+ main img {
+    width: 50%; 
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+div.video {
+    background-color: rgba(0, 0, 0, 0.87);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+
+
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 300px;
+    width: 50%;
+    height: 50%;
+    position: center;
+}
+
+
+aside {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.411);
+}
+
+
+aside  h3 {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 7px;
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 1;
+    margin-bottom: 10px;
+    margin-top: 7px;
+}
+
+article .ppp {
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 7px;
+    font-family: var(--fonte-destaque);
+    text-align: center;
+
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.658);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    background-image: rgba(0, 0, 0, 0.486);
+    margin: auto;
+    border-radius: 5px;
+}
+
+footer p {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    }
+
+
+
+footer a:hover {
+    text-decoration: none;
+    color: orangered;
+}
